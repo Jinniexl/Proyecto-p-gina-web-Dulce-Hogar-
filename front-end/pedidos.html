@@ -4,13 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos - Dulce Hogar</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <header>
+    <img src="assets/logo.png" alt="Logo de Dulce Hogar">
+    <h1>Dulce Hogar</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Nuestra Historia</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
     <main>
-    <section id="historia">
-        <h2>Nuestra Historia</h2>
-        <p>Descubre cómo comenzó todo en Dulce Hogar.</p>
+    <section id="pedidos">
+            <h2>Realiza tu pedido</h2>
+
+            <p>Completa el siguiente formulario para solicitar nuestros postres.</p>
+
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <br><br>
+
+                <label for="postre">Selecciona tu postre:</label>
+                <select id="postre" name="postre" required>
+                    <option value="">Elige una opción</option>
+                    <option value="pie-fresa">Pie de fresa</option>
+                    <option value="pie-manzana">Pie de manzana</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="pastel-personalizado">Pastel personalizado</option>
+                    <option value="galletas">Galletas</option>
+                </select>
+                <br><br>
+                <div id="opciones-galletas" style="display: none;">
+                    <label for="sabor-galletas">Selecciona el sabor:</label>
+                    <select id="sabor-galletas" name="sabor-galletas">
+                        <option value="">Elige un sabor</option>
+                        <option value="vainilla">Vainilla</option>
+                        <option value="chips-chocolate">Chips de chocolate</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                <br><br>
+
+                <label for="mensaje">Detalles del pedido:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar pedido</button>
+            </form>
     </section>
     </main>
+<footer>
+    <h4>Síguenos en redes sociales</h4>
+    <p>&copy; 2026 Dulce Hogar. Repostería  artesanal. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
