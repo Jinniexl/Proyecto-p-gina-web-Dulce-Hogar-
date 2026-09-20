@@ -547,3 +547,47 @@ nav a:hover {
 #calcular-total:hover {
     transform: translateY(-3px);
 }
+
+/* Footer */
+
+footer {
+    background-color: #F8DDE5;
+    color: #6B4545;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #C9A45C;
+}
+
+footer h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #A85D76;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+}
+
+footer::before,
+footer::after {
+    content: "✦";
+    position: absolute;
+    top: 35px;
+    color: #C9A45C;
+    font-size: 1.5rem;
+}
+
+footer::before {
+    left: 12%;
+}
+
+footer::after {
+    right: 12%;
+}
