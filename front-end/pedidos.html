@@ -25,60 +25,68 @@
 </header>
     <main>
     <section id="pedidos">
-            <h2>Realiza tu pedido</h2>
+            <h2>¡Realiza tu pedido!</h2>
 
             <p>Completa el siguiente formulario para solicitar nuestros postres.</p>
 
             <form>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+             <label for="nombre">Nombre completo:</label>
+             <input type="text" id="nombre" name="nombre" required>
 
-                <br><br>
+             <label for="correo">Correo electrónico:</label>
+             <input type="email" id="correo" name="correo" required>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+             <label for="telefono">Número de teléfono:</label>
+             <input type="tel" id="telefono" name="telefono" required>
 
-                <br><br>
-
-                <label for="postre">Selecciona tu postre:</label>
-                <select id="postre" name="postre" required>
-                    <option value="">Elige una opción</option>
-                    <option value="pie-fresa">Pie de fresa</option>
-                    <option value="pie-manzana">Pie de manzana</option>
-                    <option value="cupcakes">Cupcakes</option>
-                    <option value="pastel-personalizado">Pastel personalizado</option>
-                    <option value="galletas">Galletas</option>
+             <label for="pago">Método de pago:</label>
+             <select id="pago" name="pago" required>
+                <option value="">Selecciona un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+             
+             <label for="producto">Producto que deseas:</label>
+             <select id="producto" name="producto" required>
+                <option value="">Selecciona un producto</option>
+                <option value="pie-fresa">Pie de fresa</option>
+                <option value="pie-manzana">Pie de manzana</option>
+                <option value="cupcakes">Cupcakes</option>
+                <option value="pastel">Pastel personalizado</option>
+                <option value="galletas">Galletas</option>
+            </select>
+            <div id="opciones-galletas" style="display: none;">
+                <label for="sabor-galletas">Sabor de las galletas:</label>
+                <select id="sabor-galletas" name="sabor-galletas">
+                    <option value="">Selecciona un sabor</option>
+                    <option value="chips">Chips de chocolate</option>
+                    <option value="vainilla">Vainilla</option>
                 </select>
-                <br><br>
-                <div id="opciones-galletas" style="display: none;">
-                    <label for="sabor-galletas">Selecciona el sabor:</label>
-                    <select id="sabor-galletas" name="sabor-galletas">
-                        <option value="">Elige un sabor</option>
-                        <option value="vainilla">Vainilla</option>
-                        <option value="chips-chocolate">Chips de chocolate</option>
-                    </select>
-                </div>
+            </div>
 
-                <br><br>
-
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad" min="1" required>
-
-                <br><br>
-
-                <label for="mensaje">Detalles del pedido:</label>
-                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-                <br><br>
-
-                <button type="submit">Enviar pedido</button>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+            <button type="button" id="calcular-total">Calcular total</button>
+            <p id="resultado-total">Total estimado: $0</p>
+            
+            <label for="fecha">Fecha de entrega:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="detalles">Detalles adicionales:</label>
+            <textarea id="detalles" name="detalles" rows="4" placeholder="Escribe aquí cualquier detalle de tu pedido (sabores, decoración, etc.)..."></textarea>
+            
+            <button type="submit" class="boton-enviar">Enviar pedido</button>
             </form>
+    
+        <p class="mensaje-pedido">
+            ¡Gracias por tu pedido! Dentro de poco nos comunicaremos contigo
+            para verificar los detalles y ponernos de acuerdo con el método de pago.
+        </p>
     </section>
     </main>
 <footer>
     <h4>Síguenos en redes sociales</h4>
     <p>&copy; 2026 Dulce Hogar. Repostería  artesanal. Todos los derechos reservados.</p>
 </footer>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

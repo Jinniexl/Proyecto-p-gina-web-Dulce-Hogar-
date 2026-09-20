@@ -114,6 +114,9 @@ nav a:hover {
     background-color: #FFF8F0;
     border-color: #C9A45C;
     transform: translateY(-2px);
+    box-shadow:
+        0 0 10px rgba(201, 164, 92, 0.5),
+        0 0 22px rgba(201, 164, 92, 0.3);
 }
 
 /* Inicio */
@@ -438,4 +441,109 @@ nav a:hover {
     box-shadow:
         0 0 10px rgba(201, 164, 92, 0.4),
         0 0 20px rgba(201, 164, 92, 0.25);
+}
+
+/* Formulario pedido */
+
+#pedidos {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 45px;
+    background-color: #FFF8F0;
+    border: 1px solid #C9A45C;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(107, 69, 69, 0.08);
+    text-align: center;
+}
+
+#pedidos h2 {
+    color: #A85D76;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#pedidos > p {
+    margin-bottom: 30px;
+}
+
+#pedidos form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+#pedidos label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#pedidos input,
+#pedidos select,
+#pedidos textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8B7C8;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #6B4545;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+}
+
+#pedidos input:focus,
+#pedidos select:focus,
+#pedidos textarea:focus {
+    outline: none;
+    border-color: #C9A45C;
+}
+
+.mensaje-pedido {
+    margin-top: 30px;
+    color: #A85D76;
+    font-weight: 600;
+    text-align: center;
+}
+
+.boton-enviar {
+    align-self: center;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #E8B7C8;
+    color: #6B4545;
+    border: 1px solid #C9A45C;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 10px rgba(201, 164, 92, 0.5),
+        0 0 22px rgba(201, 164, 92, 0.3);
+}
+
+/* botón de calcular total */
+#calcular-total {
+    align-self: center;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #E8B7C8;
+    color: #6B4545;
+    border: 1px solid #C9A45C;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#calcular-total:hover {
+    transform: translateY(-3px);
 }
