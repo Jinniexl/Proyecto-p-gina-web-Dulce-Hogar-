@@ -285,3 +285,86 @@ nav a:hover {
         0 0 10px rgba(201, 164, 92, 0.35),
         0 0 22px rgba(201, 164, 92, 0.25);
 }
+
+/* Catálogo */
+
+#catalogo {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+#catalogo h2 {
+    color: #A85D76;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#catalogo > p {
+    margin-bottom: 40px;
+    color: #6B4545;
+}
+
+/* Contenedor de productos */
+
+.productos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+
+.producto {
+    flex: 1 1 280px;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #FFF8F0;
+    border: 1px solid #C9A45C;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(107, 69, 69, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes */
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+/* Nombres */
+
+.producto h3 {
+    color: #6B4545;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+/* Descripciones */
+
+.producto p {
+    color: #6B4545;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Precios */
+
+.producto .precio {
+    color: #A85D76;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 18px;
+}
