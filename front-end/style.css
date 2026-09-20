@@ -193,6 +193,14 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(201, 164, 92, 0.35);
 }
 
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
 /* Historia*/
 
 #historia {
@@ -590,4 +598,98 @@ footer::before {
 
 footer::after {
     right: 12%;
+}
+
+/* Contacto */
+
+#contacto {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #A85D76;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contacto > p {
+    margin-bottom: 10px;
+    color: #6B4545;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.caja-contacto {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px 30px;
+    background-color: #FFF8F0;
+    border: 1px solid #C9A45C;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(107, 69, 69, 0.08);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.caja-contacto:hover {
+    transform: translateY(-5px);
+}
+
+.caja-contacto h3 {
+    color: #A85D76;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 8px;
+}
+
+.caja-contacto p {
+    color: #6B4545;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.caja-contacto:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 12px rgba(201, 164, 92, 0.5),
+        0 0 25px rgba(201, 164, 92, 0.3);
+}
+
+/* Botones de Inicio */
+
+.hero-botones {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px !important;
+    flex-wrap: wrap !important;
+    margin-top: 25px !important;
+}
+
+.hero-botones a {
+    display: inline-block !important;
+    padding: 12px 22px !important;
+    background-color: #FFF8F0 !important;
+    color: #6B4545 !important;
+    border: 1px solid #C9A45C !important;
+    border-radius: 25px !important;
+    text-decoration: none !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.hero-botones a:hover {
+    transform: translateY(-3px) !important;
+    box-shadow:
+        0 0 10px rgba(201, 164, 92, 0.5),
+        0 0 22px rgba(201, 164, 92, 0.3) !important;
 }
