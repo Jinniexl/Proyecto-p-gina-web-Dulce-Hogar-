@@ -1,0 +1,191 @@
+/* Estilos generales.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3E5D0;
+    color: #6B4545;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+/* Encabezado*/
+
+header {
+    background-color: #F8DDE5;
+    padding: 25px 40px 18px;
+    text-align: center;
+    border-bottom: 2px solid #C9A45C;
+    position: relative;
+}
+
+/* Detalles decorativos del encabezado */
+
+header::before,
+header::after {
+    content: "✦";
+    position: absolute;
+    top: 35px;
+    color: #C9A45C;
+    font-size: 1.5rem;
+}
+
+header::before {
+    left: 12%;
+}
+
+header::after {
+    right: 12%;
+}
+
+/* Logo */
+
+header img {
+    width: 145px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* Nombre del emprendimiento */
+
+header h1 {
+    color: #6B4545;
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+/* Línea decorativa */
+
+header h1::after {
+    content: "♡";
+    display: block;
+    color: #C9A45C;
+    font-size: 1.3rem;
+    margin-top: 4px;
+}
+
+/* Menú de navegación */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #6B4545;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #A85D76;
+    background-color: #FFF8F0;
+    border-color: #C9A45C;
+    transform: translateY(-2px);
+}
+
+/* Inicio */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #F3E5D0;
+    position: relative;
+}
+
+/* Título de bienvenida */
+
+#inicio h2 {
+    color: #A85D76;
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+/* Texto de bienvenida */
+
+#inicio p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Botón del catálogo */
+
+#inicio a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #FFF8F0;
+    color: #6B4545;
+    border: 1px solid #C9A45C;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+
+#inicio a:hover {
+    background-color: #FFF8F0;
+    color: #A85D76;
+    border-color: #C9A45C;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(201, 164, 92, 0.2);
+}
+
+/* Imagen del hero */
+
+.hero-imagen {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.hero-imagen img {
+    width: 100%;
+    max-width: 480px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid #C9A45C;
+    box-shadow: 0 8px 20px rgba(107, 69, 69, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-imagen img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(201, 164, 92, 0.35);
+}
